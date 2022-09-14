@@ -34,7 +34,7 @@ body {
     margin-bottom: 1.6rem;
 }
 
-.hero-heading1, .hero-heading2, .supervisor {
+.hero-heading1, .hero-heading2, .segment-heading {
     color: #4D4F62;
 }
 
@@ -59,10 +59,6 @@ body {
     padding: 2.8rem;
 }
 
-.team-builder {
-    border-top: 3px solid #EA5454; 
-}
-
 .segment-heading {
     font-size: 2rem;
     font-weight: 600;
@@ -75,6 +71,10 @@ body {
     line-height: 2.3rem;
     margin-bottom: 3.3rem;
     color: hsl(229, 6%, 66%);
+}
+
+.team-builder {
+    border-top: 3px solid #EA5454; 
 }
 
 .supervisor {
@@ -101,4 +101,59 @@ body {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width: 768px) {
+    .grid--3x4 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 3rem;
+        max-width: 1110px;
+        margin-bottom: 3rem;
+    }
+    .container {
+        max-width: 1440px;
+        padding: 0 3.5rem;
+    }
+    .hero-heading1, .hero-heading2 {
+        font-size: 3.6rem;
+        line-height: 5.4rem;
+    }
+    .hero-heading2 {
+        margin-bottom: 1.3rem;
+    }
+    .container--hero {
+        margin: 8.5rem auto 6.4rem;
+        width: 540px;
+    }
+    .supervisor, .team-builder, .karma, .calculator {
+        max-width: 350px;
+        padding: 3.2rem;
+        margin-bottom: 0;
+    }
+    .segment-heading {
+       margin-bottom: .6rem;
+    }
+    .segment-text {
+        margin-bottom: 4rem;
+    }
+    .team-builder {
+        grid-column: 2 / 3; 
+        grid-row: 1 / 3;
+    }
+    .supervisor {
+        grid-column: 1 / 2;
+        grid-row: 2 / 4;
+    }
+    
+    .karma {
+        grid-column: 2 / 3;
+        grid-row: 3 / 5;
+    }
+    
+    .calculator {
+        grid-column: 3 / 4;
+        grid-row: 2 / 4;
+    }
 }
