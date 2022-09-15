@@ -52,7 +52,7 @@ body {
 }
 
 .supervisor, .team-builder, .karma, .calculator {
-    box-shadow: 0 4px 8px 0 rgb(0,0,0,25%);
+    box-shadow: 12px 7px 20px 6px rgb(57 75 84 / 8%);
     border-radius: .5rem;
     max-width: 311px;
     margin-bottom: 2.5rem;
